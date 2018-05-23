@@ -1,0 +1,194 @@
+{
+	"info": {
+		"name": "new_test",
+		"_postman_id": "1f0d9c5c-a913-760c-7e10-313be456f856",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create contact",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "contact",
+							"value": "hello@plivo.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "no no",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "plivo@plivo.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/contact/update/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"contact",
+						"update",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "contact",
+							"value": "hello@plivo.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "no no",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "plivo@plivo.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/contact/update/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"contact",
+						"update",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "contact",
+							"value": "hello@plivo.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "no no",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "plivo@plivo.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/contact/update/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"contact",
+						"update",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "search",
+							"value": "hello@plivo.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/contact/get/?search=plivo@plivo.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"contact",
+						"get",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "plivo@plivo.com",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
